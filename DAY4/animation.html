@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            animation-name: hello1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            top: 20px;
+            left: 20px;
+        }
+
+        @keyframes hello1 {
+            0% {
+                background-color: blue;
+                left: 20px;
+                top: 20px;
+            }
+
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 20px;
+            }
+
+            /* 25%{background-color: red;left:300px;top:20px;}*/
+            50% {
+                background-color: blue;
+                left: 300px;
+                top: 300px;
+            }
+
+            /*50%{background-color: blue;left:300px;top:300px;}*/
+            75% {
+                background-color: red;
+                left: 20px;
+                top: 300px;
+            }
+
+            /* 75%{background-color: red;left:20px;top:300px;}*/
+            100% {
+                background-color: blue;
+                left: 20px;
+                top: 20px;
+            }
+
+        }
+
+        
+        .d2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  top: 180px;
+  margin-left: 180px;
+}
+
+.d2:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+
+</html>
